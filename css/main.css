@@ -1,12 +1,32 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 body, input {
-  color: #333;
-  font-family: 'Nunito Sans', sans-serif;
+  color: rgb(73, 73, 73);
+  background-color: #ffffff;
+  font-family: 'Mukta', sans-serif;
   margin-top: 100px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+#container {
+  width:100%;
+  text-align:center;
+ }
+ #container > div {
+  width: calc(100% / 10);  
+  display: inline-block;
+  vertical-align: top;   
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  text-align:center;
+  margin:2%;    
+  padding:0px;
+ }
 
 .main {
   position: absolute;
@@ -29,6 +49,103 @@ body, input {
 
 .highlight {
   background: linear-gradient(180deg,rgba(255,255,255,0) 60%, #FFEB3B 40%);
+}
+
+.red-bold {
+  color: #B1040E;
+  font-weight: bold;
+}
+
+.red-bold:hover {
+  background-color: #b1040e;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.blend-bold {
+  color: #0F216B;
+  font-weight: bold;
+}
+
+.blend-bold:hover {
+  background-color: #0F216B;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.black-bold {
+  color: #000000;
+  font-weight: bold;
+}
+
+.purple-bold {
+  color: #4E2271;
+  font-weight: bold;
+}
+
+.purple-bold:hover {
+  background-color: #4E2271;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.pantera-bold {
+  color: #000000;
+  font-weight: bold;
+}
+
+.pantera-bold:hover {
+  background-color: #000000;;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.dhs-bold {
+  color: #344A6B;
+  font-weight: bold;
+}
+
+.dhs-bold:hover {
+  color: #ffffff;
+  background-color: #344A6B;
+  font-weight: bold;
+}
+
+.link {
+  color: #2462A0
+}
+
+.brown-bold {
+  color: #F05125;
+  font-weight: bold;
+}
+
+.brown-bold:hover {
+  color: #ffffff;
+  background-color: #F05125;
+  font-weight: bold;
+}
+
+.green-bold {
+  color: #27ae60;
+  font-weight: bold;
+}
+
+.green-bold:hover {
+  background-color: #27ae60;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.pink-bold {
+  color: #E61C5D;
+  font-weight: bold;
+}
+
+.pink-bold:hover {
+  background-color: #E61C5D;
+  color: #ffffff;
+  font-weight: bold;
 }
 
 .main .hero:hover {
@@ -87,8 +204,17 @@ a {
   /* color: #076edf; */
   text-decoration: none;
   outline: none;
+  color: inherit
 }
 
-a:hover {
-  color: #53a2fa;
+@media screen and (max-width: 480px) {
+  p {
+  /* text-align: left !important; */
+  padding-left: 10%;
+  padding-right: 10%;
+  }
+  body {
+    margin-top: 50px;
+  }
 }
+
