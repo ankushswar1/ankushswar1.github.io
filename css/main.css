@@ -2,31 +2,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@400;700&family=Source+Sans+Pro:wght@300;400;700&display=swap');
 body, input {
-  color: rgb(73, 73, 73);
-  background-color: #ffffff;
-  font-family: 'Mukta', sans-serif;
+  color: #ffffff;
+  background-color: #141516;
+  font-family: 'Source Sans Pro', sans-serif;
   margin-top: 50px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+.container {
+  padding-top: 10px;
+  display: flex;
+  padding-left: 25%;
+  padding-right: 25%;
+}
 
-#container {
-  width:100%;
-  text-align:center;
- }
- #container > div {
-  width: calc(100% / 10);  
-  display: inline-block;
-  vertical-align: top;   
-  border: none;
-  font-size: 16px;
-  font-weight: 700;
-  text-align:center;
-  margin:2%;    
-  padding:0px;
- }
+.item {
+  flex-grow: 1;
+  height: 100px;
+  text-align: center;
+}
+
+.item + .item {
+  margin-left: 2%;
+}
+
 
 .main {
   position: absolute;
@@ -51,101 +54,92 @@ body, input {
   background: linear-gradient(180deg,rgba(255,255,255,0) 60%, #FFEB3B 40%);
 }
 
-.red-bold {
-  color: #B1040E;
-  font-weight: bold;
+.stanford {
+  color: inherit
 }
 
-.red-bold:hover {
-  background-color: #b1040e;
-  font-weight: bold;
-  color: #ffffff;
+.stanford:hover {
+  color: #B1040E
 }
 
-.blend-bold {
-  color: #0F216B;
-  font-weight: bold;
+.blend {
+  color: inherit
 }
 
-.blend-bold:hover {
-  background-color: #0F216B;
-  font-weight: bold;
-  color: #ffffff;
+.blend:hover {
+  color: #0028ff
 }
 
-.black-bold {
-  color: #000000;
-  font-weight: bold;
+.msft {
+  color: inherit
 }
 
-.purple-bold {
-  color: #4E2271;
-  font-weight: bold;
+.msft:hover {
+  color: #ff8a5c
 }
 
-.purple-bold:hover {
-  background-color: #4E2271;
-  color: #ffffff;
-  font-weight: bold;
+.blockcypher {
+  color: inherit
 }
 
-.pantera-bold {
-  color: #000000;
-  font-weight: bold;
+.blockcypher:hover {
+  color: #b643cd
 }
 
-.pantera-bold:hover {
-  background-color: #000000;;
-  color: #ffffff;
-  font-weight: bold;
+.pantera {
+  color: inherit;
 }
 
-.dhs-bold {
-  color: #344A6B;
-  font-weight: bold;
+.pantera:hover {
+  color: #f0a500;
 }
 
-.dhs-bold:hover {
-  color: #ffffff;
-  background-color: #344A6B;
-  font-weight: bold;
+.ucsb {
+  color: inherit
 }
 
-.link {
-  color: #2462A0
+.ucsb:hover {
+  color: #fff591
 }
 
-.brown-bold {
-  color: #F05125;
-  font-weight: bold;
+.dhs {
+  color: inherit
 }
 
-.brown-bold:hover {
-  color: #ffffff;
-  background-color: #F05125;
-  font-weight: bold;
+.dhs:hover {
+  color: #E62F57
 }
 
-.green-bold {
-  color: #27ae60;
-  font-weight: bold;
+.canary {
+  color: inherit
 }
 
-.green-bold:hover {
-  background-color: #27ae60;
-  color: #ffffff;
-  font-weight: bold;
+.canary:hover {
+  color:#f9fd50;
 }
 
-.pink-bold {
-  color: #E61C5D;
-  font-weight: bold;
+.asha {
+  color: inherit
 }
 
-.pink-bold:hover {
-  background-color: #E61C5D;
-  color: #ffffff;
-  font-weight: bold;
+.asha:hover {
+  color: #FEB800
+}
+
+.treehacks {
+  color: inherit
+}
+
+.treehacks:hover {
+  color: #EE3770
+}
+
+.lnk {
+  color: inherit
+}
+
+.lnk:hover {
+  color: #00f9ff
 }
 
 .main .hero:hover {
@@ -159,11 +153,14 @@ body, input {
 
 h1 {
   font-weight: bold;
-  font-size: 24px;
+  font-size: 36px;
   line-height: 24px;
-  padding-top: 0;
-  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 1%;
+  padding-left: 20%;
+  text-align: left;
 }
+
 
 h2 {
   font-weight: bold;
@@ -181,8 +178,8 @@ p {
   font-size: 20px;
   line-height: 31px;
   padding-top: 0;
-  /* text-justify: left; */
-  text-align: justify;
+  text-justify: left;
+  /* text-align: justify; */
   padding-left: 20%;
   padding-right: 20%;
 }
@@ -201,11 +198,15 @@ ul {
 
 a {
   /* transition: all .2s ease-in-out; */
-  /* color: #076edf; */
+  font-weight: bold;
   text-decoration: none;
   outline: none;
   color: inherit
 }
+
+/* a:hover {
+  color: #f0a500;
+} */
 
 @media screen and (max-width: 480px) {
   p {
