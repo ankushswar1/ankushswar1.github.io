@@ -210,6 +210,17 @@ a {
 } */
 
 @media screen and (max-width: 480px) {
+
+  .container {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  h1 {
+    padding-left: 10%;
+    font-size: 8vw;
+  }
+
   p {
   /* text-align: left !important; */
   padding-left: 10%;
