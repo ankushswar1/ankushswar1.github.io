@@ -19,7 +19,7 @@ body, input {
   -webkit-text-size-adjust: 100%;
 }
 .container {
-  padding-top: 10px;
+  padding-top: 20px;
   display: flex;
   padding-left: 30%;
   padding-right: 30%;
