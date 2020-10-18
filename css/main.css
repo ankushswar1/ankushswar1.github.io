@@ -4,10 +4,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Recursive:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Recursive:wght@400;700&family=Source+Sans+Pro:wght@300;400;700&display=swap');
+/* @font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+} */
 body, input {
-  color: #ffffff;
-  background-color: #141516;
-  font-family: 'Source Sans Pro', sans-serif;
+  color: #2f3640;
+  background-color: #f9fcfb;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont;
   margin-top: 50px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -16,8 +21,8 @@ body, input {
 .container {
   padding-top: 10px;
   display: flex;
-  padding-left: 25%;
-  padding-right: 25%;
+  padding-left: 30%;
+  padding-right: 30%;
 }
 
 .item {
@@ -55,43 +60,70 @@ body, input {
 }
 
 .stanford {
-  color: inherit
+  color: #B1040E;
+  font-weight: bold
 }
 
 .stanford:hover {
-  color: #B1040E
+  color: #B1040E;
+  text-decoration: underline;
 }
 
+.ssom {
+  color: #4a69bd;
+  font-weight: bold
+}
+
+.ssom:hover {
+  text-decoration: underline;
+}
+
+.sds {
+  color: #B1040E;
+  font-weight: bold;
+}
+
+.sds:hover {
+  text-decoration: underline;
+}
+
+
 .blend {
-  color: inherit
+  color: #252B69;
+  font-weight: bold
 }
 
 .blend:hover {
-  color: #0028ff
+  color: #252B69;
+  text-decoration: underline;
 }
 
 .msft {
-  color: inherit
+  color: #F25022;
+  font-weight: bold
 }
 
 .msft:hover {
-  color: #ff8a5c
+  color: #F25022;
+  text-decoration: underline;
 }
 
 .blockcypher {
-  color: inherit
+  color: #652D90
 }
 
 .blockcypher:hover {
-  color: #b643cd
+  color: #652D90;
+  text-decoration: underline;
 }
 
 .pantera {
-  color: inherit;
+  color: #000000;
 }
 
 .pantera:hover {
-  color: #f0a500;
+  color: #000000;
+  text-decoration: underline;
 }
 
 .ucsb {
@@ -119,27 +151,34 @@ body, input {
 }
 
 .asha {
-  color: inherit
+  /* color: #FC427B; */
+  color: #B33771;
+  /* color: #2c3e50; */
+  font-weight: bold
 }
 
 .asha:hover {
-  color: #FEB800
+  text-decoration: underline;
 }
 
 .treehacks {
-  color: inherit
+  /* color: #0D9071; */
+  /* color: #1C413A; */
+  color: #21CE99;
 }
 
 .treehacks:hover {
-  color: #EE3770
+  color: #21CE99;
+  text-decoration: underline;
 }
 
 .lnk {
-  color: inherit
+  color: #1B9CFC;
+  font-weight: bold;
 }
 
 .lnk:hover {
-  color: #00f9ff
+  text-decoration: underline;
 }
 
 .main .hero:hover {
@@ -153,11 +192,11 @@ body, input {
 
 h1 {
   font-weight: bold;
-  font-size: 36px;
+  font-size: 34x;
   line-height: 24px;
   padding-top: 2%;
   padding-bottom: 1%;
-  padding-left: 20%;
+  padding-left: 30%;
   padding-right: 20%;
   text-align: left;
 }
@@ -176,13 +215,13 @@ h2 {
 
 p {
   font-weight: normal;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 31px;
   padding-top: 0;
   text-justify: left;
   /* text-align: justify; */
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 30%;
+  padding-right: 30%;
 }
 
 ul {
@@ -217,14 +256,14 @@ a {
   }
 
   h1 {
-    padding-left: 10%;
-    font-size: 8vw;
+    padding-left: 15%;
+    font-size: 6.5vw;
   }
 
   p {
-  /* text-align: left !important; */
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 15%;
+  padding-right: 15%;
+  font-size: 18px;
   }
   body {
     margin-top: 50px;
